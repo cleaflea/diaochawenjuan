@@ -1,0 +1,107 @@
+<%= form_for(@thing) do |f| %>
+  <% if @thing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@thing.errors.count, "error") %> prohibited this thing from being saved:</h2>
+
+      <ul>
+      <% @thing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <label>调查时间(例如2014/11/11 上午12:00:00)</label>
+    <br>
+    <%= f.text_field :time %>
+  </div>
+  <div class="field">
+    <label>姓名</label>
+    <br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <label>性别</label>
+    <br>
+    <%= f.text_field :sex %>
+  </div>
+  <div class="field">
+    <label>年龄</label>
+    <br>
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <label>所在地</label>
+    <br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <label>行业</label>
+    <br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <label>职业</label>
+    <br>
+    <%= f.text_field :job %>
+  </div>
+  <div class="field">
+    <label>月可支配收入</label>
+    <br>
+    <%= f.text_field :money %>
+  </div>
+  <div class="field">
+    <label>寻求服务的渠道(例如朋友圈、微博、百度、知乎)</label>
+    <br>
+    <%= f.text_area :search_service %>
+  </div>
+  <div class="field">
+    <label>购买服务的前提(例如1、对方的真实性2、服务不满意的时候纠纷处理3、隐私骚扰)</label>
+    <br>
+    <%= f.text_area :buy_service_prepare %>
+  </div>
+  <div class="field">
+    <label>愿意购买服务的类型(例如心理咨询，旅游，母婴，生活，职业，留学，金融，美容，宠物，法律等)</label>
+    <br>
+    <%= f.text_area :buy_service_category %>
+  </div>
+  <div class="field">
+    <label>愿意单次支付的金额</label>
+    <br>
+    <%= f.text_field :buy_service_money %>
+  </div>
+  <div class="field">
+    <label>售卖服务的目的(例如帮助别人，挣钱)</label>
+    <br>
+    <%= f.text_area :sell_service_purpose %>
+  </div>
+  <div class="field">
+    <label>愿意售卖的服务内容(心理咨询，旅游，母婴，生活，职业，留学，金融，美容，宠物，法律等)</label>
+    <br>
+    <%= f.text_area :sell_service_content %>
+  </div>
+  <div class="field">
+    <label>愿意售卖服务的形式(例如微信，语音，线下等)</label>
+    <br>
+    <%= f.text_area :sell_service_type %>
+  </div>
+  <div class="field">
+    <label>服务售卖单价(例如100/时)</label>
+    <br>
+    <%= f.text_field :sell_service_money %>
+  </div>
+  <div class="field">
+    <label>建议</label>
+    <br>
+    <%= f.text_area :suggestion %>
+  </div>
+  <div class="field">
+    <label>定位(例如大众服务：医生、律师)</label>
+    <br>
+    <%= f.text_area :position %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

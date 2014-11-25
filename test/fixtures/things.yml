@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: MyString
+  name: MyString
+  sex: MyString
+  age: MyString
+  location: MyString
+  category: MyString
+  job: MyString
+  money: MyString
+  search_service: MyText
+  buy_service_prepare: MyText
+  buy_service_category: MyText
+  buy_service_money: MyString
+  sell_service_purpose: MyText
+  sell_service_content: MyText
+  sell_service_type: MyText
+  sell_service_money: MyString
+  suggestion: MyText
+  position: MyText
+
+two:
+  time: MyString
+  name: MyString
+  sex: MyString
+  age: MyString
+  location: MyString
+  category: MyString
+  job: MyString
+  money: MyString
+  search_service: MyText
+  buy_service_prepare: MyText
+  buy_service_category: MyText
+  buy_service_money: MyString
+  sell_service_purpose: MyText
+  sell_service_content: MyText
+  sell_service_type: MyText
+  sell_service_money: MyString
+  suggestion: MyText
+  position: MyText

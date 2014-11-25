@@ -1,0 +1,59 @@
+<h1>Listing things</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Location</th>
+      <th>Category</th>
+      <th>Job</th>
+      <th>Money</th>
+      <th>Search service</th>
+      <th>Buy service prepare</th>
+      <th>Buy service category</th>
+      <th>Buy service money</th>
+      <th>Sell service purpose</th>
+      <th>Sell service content</th>
+      <th>Sell service type</th>
+      <th>Sell service money</th>
+      <th>Suggestion</th>
+      <th>Position</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @things.each do |thing| %>
+      <tr>
+        <td><%= thing.time %></td>
+        <td><%= thing.name %></td>
+        <td><%= thing.sex %></td>
+        <td><%= thing.age %></td>
+        <td><%= thing.location %></td>
+        <td><%= thing.category %></td>
+        <td><%= thing.job %></td>
+        <td><%= thing.money %></td>
+        <td><%= thing.search_service %></td>
+        <td><%= thing.buy_service_prepare %></td>
+        <td><%= thing.buy_service_category %></td>
+        <td><%= thing.buy_service_money %></td>
+        <td><%= thing.sell_service_purpose %></td>
+        <td><%= thing.sell_service_content %></td>
+        <td><%= thing.sell_service_type %></td>
+        <td><%= thing.sell_service_money %></td>
+        <td><%= thing.suggestion %></td>
+        <td><%= thing.position %></td>
+        <!--<td><%= link_to 'Show', thing %></td>
+        <td><%= link_to 'Edit', edit_thing_path(thing) %></td>
+        <td><%= link_to 'Destroy', thing, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thing', new_thing_path %>
